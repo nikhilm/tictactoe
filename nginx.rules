@@ -1,0 +1,13 @@
+server {
+    listen 8003;
+    server_name localhost;
+    root /Users/nikhilmarathe/workspace/tictactoe;
+
+    location / {
+        index index.html;
+    }
+
+    location ~ /play/.* {
+        rewrite .* /index.html last;
+    }
+}

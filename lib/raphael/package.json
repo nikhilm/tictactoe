@@ -1,0 +1,14 @@
+{
+  "author": "Dmitry Baranovskiy",
+  "name": "raphael",
+  "description": "An npm package of raphael",
+  "version": "1.4.7-npm-1.0.1",
+  "main": "raphael.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marcuswestin/raphael.git"
+  },
+  "contributors": [
+    "Marcus Westin (http://marcuswest.in)"
+  ]
+}

@@ -37,3 +37,8 @@ h4 a {
     text-shadow: black -2px -2px 2px;
     text-decoration: none;
 }
+
+input {
+    width: 90%;
+    font-size: 20px;
+}

@@ -1,11 +1,39 @@
 <html>
     <head>
         <title>TicTacToe</title>
+
+        <link rel="stylesheet" type="text/css" href="styles/tictactoe.css"> </link>
+
         <script language="javascript" type="text/javascript" src="lib/underscore-min.js"> </script>
         <script language="javascript" type="text/javascript" src="lib/backbone/backbone.js"> </script>
+        <script language="javascript" type="text/javascript" src="lib/raphael-min.js"> </script>
         <script language="javascript" type="text/javascript" src="lib/uuid.js"> </script>
         <script language="javascript" type="text/javascript">
             window.onload = function() {
+                /*var paper = Raphael('container', 500, 500);
+                var O = paper.circle(180, 180, 35);
+                O.attr({'stroke': '#000', 'stroke-width': '16'});
+                var X = paper.path('M45,45l60,60m0,-60,l-60,60');
+                X.attr({'stroke': '#00f', 'stroke-width': '16', 'stroke-linecap': 'round'});
+
+                var cellWidth = 100, cellHeight = 100;
+                var vert = 'M30,30';
+                for (var i = 1; i < 3; i++) {
+                    vert += 'M' + (30+i*cellWidth) + ',30';
+                    vert += 'l0,' + 3*cellHeight;
+                }
+                var horiz = 'M30,30';
+                for (var j = 1; j < 3; j++) {
+                    horiz += 'M30,' + (30+j*cellHeight);
+                    horiz += 'l' + 3*cellWidth + ',0';
+                }
+                console.log(horiz);
+
+                var grid = paper.path(vert);
+                grid.attr({'stroke': '#000', 'stroke-width': '5'});
+                var grid = paper.path(horiz);
+                grid.attr({'stroke': '#000', 'stroke-width': '5'});*/
+
                 var xhr = new XMLHttpRequest();
                 xhr.open('GET', 'http://localhost:9002/RPUSH/playerqueue/'+UUID.generate(), true);
                 xhr.setRequestHeader('Authorization', 'Basic dGljdGFjdG9lOmVuZGdhbWU=');
@@ -20,11 +48,17 @@
                         	console.log(JSON.parse(msg.SUBSCRIBE[2]));
                     }
                 }
-                xhr.send();
+                //TODO: enable
+                //xhr.send();
             }
         </script>
     </head>
     <body>
-        <h1>Open the console</h1>
+        <h1>Tic Tac Toe</h1>
+
+        <h4 id="join-button"><a href="#">Join game</a></h4>
+        <h4 id="invite-button"><a href="#">Invite a friend</a></h4>
+        <div id="container">
+        </div>
     </body>
 </html>

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Paytone One';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Paytone One'), local('PaytoneOne'), url('../paytoneone.ttf') format('truetype');
+}
+
+div#container {
+    margin: 10px auto;
+    width: 50%;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Paytone One';
+    border-bottom: solid 2px #ddd;
+    margin-bottom: 3%;
+}
+
+h4#join-button, h4#invite-button {
+    font-size: 50px;
+    font-family: 'Paytone One', sans-serif;
+    background: green;
+    border-radius: 10px;
+    padding: 10px 30px 20px;
+    display: inline;
+    margin-left: 30%;
+}
+
+h4#invite-button {
+    background: maroon;
+    margin-left: 2%;
+}
+
+h4 a {
+    color: white;
+    text-shadow: black -2px -2px 2px;
+    text-decoration: none;
+}

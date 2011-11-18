@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>TicTacToe</title>
+        <script language="javascript" type="text/javascript" src="lib/underscore-min.js"> </script>
+        <script language="javascript" type="text/javascript" src="lib/backbone/backbone.js"> </script>
+        <script language="javascript" type="text/javascript" src="lib/uuid.js"> </script>
+        <script language="javascript" type="text/javascript">
+            window.onload = function() {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', 'http://localhost:9002/RPUSH/playerqueue/'+UUID.generate(), true);
+                xhr.setRequestHeader('Authorization', 'Basic dGljdGFjdG9lOmVuZGdhbWU=');
+                var pos = 0;
+                xhr.onreadystatechange = function() {
+                    if (xhr.responseText) {
+                    	var data = xhr.responseText.substr(pos);
+                    	pos = xhr.responseText.length;
+
+                        var msg = JSON.parse(data);
+                        if (typeof(msg.SUBSCRIBE[2]) == 'string')
+                        	console.log(JSON.parse(msg.SUBSCRIBE[2]));
+                    }
+                }
+                xhr.send();
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Open the console</h1>
+    </body>
+</html>

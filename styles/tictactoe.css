@@ -59,7 +59,7 @@ input {
     font-size: 20px;
 }
 
-h5#turnIndicator {
+h5#turnIndicator, h5#gameOver {
     font-family: 'Impact', sans-serif;
     font-size: 30px;
 }

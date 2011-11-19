@@ -43,6 +43,11 @@ div#waitView h4 {
     margin-left: 27%;
 }
 
+h1 a {
+    color: black;
+    text-shadow: none;
+}
+
 h4 a {
     color: white;
     text-shadow: black -2px -2px 2px;

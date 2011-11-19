@@ -32,6 +32,17 @@ h4#invite-button {
     margin-left: 2%;
 }
 
+div#waitView h4 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Paytone One', sans-serif;
+    background: green;
+    border-radius: 10px;
+    padding: 10px 30px 20px;
+    display: inline;
+    margin-left: 27%;
+}
+
 h4 a {
     color: white;
     text-shadow: black -2px -2px 2px;

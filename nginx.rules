@@ -10,4 +10,8 @@ server {
     location ~ /play/.* {
         rewrite .* /index.html last;
     }
+
+    location ~ /host/.* {
+        rewrite .* /index.html last;
+    }
 }

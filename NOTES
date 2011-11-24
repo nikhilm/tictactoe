@@ -7,3 +7,5 @@ nginx used for static files
 
 why not Client -> nginx -> Webdis ?
 nginx can't use HTTP/1.1 upstream. Keep-Alive + Webdis PUB/SUB was malfunctioning in number of connected subscribers due to that.
+
+backbone does not detect 'deep' updates, ie. if a attribute is an array and you update an element

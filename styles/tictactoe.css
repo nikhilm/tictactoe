@@ -59,8 +59,13 @@ input {
     font-size: 20px;
 }
 
+h5 {
+    margin-bottom: 5px;
+    padding: 0;
+}
+
 h5#turnIndicator, h5#gameOver {
-    font-family: 'Impact', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 30px;
 }
 

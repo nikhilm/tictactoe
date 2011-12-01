@@ -63,3 +63,22 @@ h5#turnIndicator, h5#gameOver {
     font-family: 'Impact', sans-serif;
     font-size: 30px;
 }
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    height: 35px;
+    width: 100%;
+}
+
+#about {
+    display: none;
+}
+
+#about-link {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 16px;
+    float: right;
+    margin-right: 2%;
+    bottom: 10;
+}

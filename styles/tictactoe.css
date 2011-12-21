@@ -87,3 +87,8 @@ h5#turnIndicator, h5#gameOver {
     margin-right: 2%;
     bottom: 10;
 }
+
+#mixpanel-banner, .twitter-share-button {
+    float: left;
+    margin-bottom: 2%;
+}

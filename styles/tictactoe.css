@@ -18,13 +18,13 @@ h1 {
 }
 
 h4#join-button, h4#invite-button {
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Paytone One', sans-serif;
     background: green;
     border-radius: 10px;
-    padding: 10px 30px 20px;
+    padding: 7px 20px 15px;
     display: inline;
-    margin-left: 27%;
+    margin-left: 33%;
 }
 
 h4#invite-button {

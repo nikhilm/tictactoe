@@ -20,7 +20,7 @@
 
 		{
 			"http_basic_auth":	"tictactoe:endgame",
-			"enabled":		["PUBLISH", "SUBSCRIBE", "LPOP", "RPUSH", "INFO"]
+			"enabled":		["PUBLISH", "SUBSCRIBE", "LPOP", "LREM", "RPUSH", "INFO"]
 		}
 	],
 
